@@ -1,33 +1,33 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-       <style>
-        div {
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbndyPGvAoXu0jVmC0bDfuOQESzzZgKXTZ5Q&s");
-  width: 300px;
-  border: 15px solid rgb(191, 238, 130);
-  padding: 50px;
-  margin: 20px;
-      }
-     </style>    
-<title> SIGN IN FORM </title>
-<link rel="stylesheet" href="style.css">   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <div class="container">
+    <div class="logo">✦</div>
+    <h2>Welcome back</h2>
+    <p class="subtitle">Sign in to your account</p>
 
-    <div class=".container">
+    <form onsubmit="handleSubmit(event)">
+      <div class="input-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="Enter your username" required>
+      </div>
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your password" required>
+      </div>
+      <button type="submit">Sign In</button>
+    </form>
 
+    <p id="welcome-message"></p>
+  </div>
 
-        <h2>SIGN IN FORM</h2>
-        <form onsubmit="ClickonSubmitButton(event)">
-        <input type="text" id="username" placeholder="username*"></br>
-        <input type="password" id="password" placeholder="password"></br>
-        <button type="submit">click </button>
-        </form>
-        <p id="welcomemessage"></p>
-        </div>
-        <script src="script.js"></script>
-
-    
+  <script src="script.js"></script>
 </body>
-</html>   
+</html>
